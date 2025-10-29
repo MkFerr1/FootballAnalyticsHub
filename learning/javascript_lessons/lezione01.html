@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <title>Lezione01</title>
+    </head>
+
+    <body>
+        <script>
+            let nome = "Michele"; //con let si dichiara una variabile
+            var cognome = "Ferreri"; //si può usare anche var ma è più vecchio
+
+            nome = 'Luca'; //assegnazione di un nuovo valore alla variabile
+            console.log(nome); //con console.log() si logga in console il valore della variabile
+            console.log(cognome);
+
+
+            let nomiClasse = ["Michele", "Luca", "Anna"]; //dichiarazione di un array di stringhe
+            console.log(nomiClasse);
+
+
+            let persona = {                 //dichiarazione di un oggetto
+                nome: "Michele",
+                cognome: "Ferreri",
+                eta: 17,
+                residenza: "San Ferdinando",
+            };
+            console.log(persona.nome); //si logga una proprietà dell'oggetto
+            console.log(typeof persona.nome); //si logga il tipo di una proprietà dell'oggetto
+
+
+            //in JavaScript le variabili non hanno un tipo fisso ma possono sempre cambiarlo
+
+            let isOnline = false; //ora la variabile nome è di tipo number
+            console.log(typeof isOnline);
+            isOnline = "Ora sono online"; //ora la variabile isOnline è di tipo string
+            console.log(typeof isOnline);
+
+            
+            //le variabili possono anche essere dichiarate come const(costanti)
+            
+            const PI_GRECO = 3.14;
+            console.log(PI_GRECO);
+            //PI_GRECO = 3.1415; //questo genera un errore
+        </script>
+    </body>
+</html>
